@@ -1,4 +1,4 @@
-def num_translation(number_for_translate):
+def num_translate(number_for_translate):
     nums_relation = {'zero' : 'ноль',
     'one' : 'один',
     'two' : 'два',
@@ -14,4 +14,4 @@ def num_translation(number_for_translate):
     return (nums_relation.get(number_for_translate))
 
 number = input('введите число для перевода: ')
-print(num_translation(number))
+print(num_translate(number))

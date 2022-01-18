@@ -6,6 +6,8 @@ adjectives = ["веселый", "яркий", "зеленый", "утопичн�
 
 
 def get_jokes(jokes_number):
+    '''Функция принимает в качестве аргумента переменную типа int - "jokes_number",
+     и возвращает это же количество случайно сформированных "шуток" из строк списков "nouns", "adverbs" и "adjectives"'''
     jokes_list = []
     for i in range(jokes_number):
         jokes_list.append(random.choice(nouns) + ' ' + random.choice(adverbs) + ' ' + random.choice(adjectives))
@@ -13,3 +15,4 @@ def get_jokes(jokes_number):
 
 
 print(get_jokes(5))
+help(get_jokes)
